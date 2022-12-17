@@ -1,0 +1,71 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "fc00c66bb8eca96f30b7559ec47dd8bc",
+    "packages": [
+        {
+            "name": "krugozor/database",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Vasiliy-Makogon/Database.git",
+                "reference": "049e35ed9ef62af948badc33cb34d3b008116365"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Vasiliy-Makogon/Database/zipball/049e35ed9ef62af948badc33cb34d3b008116365",
+                "reference": "049e35ed9ef62af948badc33cb34d3b008116365",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "ext-mysqli": "*",
+                "php": ">=8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Krugozor\\Database\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Vasiliy Makogon",
+                    "email": "makogon-vs@yandex.ru"
+                }
+            ],
+            "description": "PHP class library for simple, convenient, fast and safe work with MySql database, using PHP mysqli extension and imitation of prepared queries.",
+            "homepage": "https://github.com/Vasiliy-Makogon/Database",
+            "keywords": [
+                "database",
+                "ext-mysqli",
+                "mysql",
+                "mysql class",
+                "mysql database class",
+                "mysql database php class",
+                "mysqli",
+                "placeholder",
+                "placeholders",
+                "prepare statement"
+            ],
+            "support": {
+                "issues": "https://github.com/Vasiliy-Makogon/Database/issues",
+                "source": "https://github.com/Vasiliy-Makogon/Database/tree/v1.0.0"
+            },
+            "time": "2022-11-30T18:47:03+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}

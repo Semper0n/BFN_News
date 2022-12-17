@@ -1,0 +1,387 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif, Tahoma, Arial;
+  background-color: #e8e8e8;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ================     Header     ================  */
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.3);
+  background-color: #f7f7f7;
+  z-index: 10;
+  width: 100%;
+  background-color: #00A6FC;
+  height: auto;
+}
+
+.topnav-left {
+  margin-left: 3vw;
+}
+
+.logo {
+  max-width: 80px;
+  min-height: 80px;
+}
+
+.logo2 {
+  height: 80px;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  
+}
+
+.nav ul li a {
+  color: #e7e7e7;
+  min-width: 100%;
+}
+
+
+#burger, [for=burger], .nav ul hr {
+  display: none;
+  color: #e7e7e7;
+}
+
+[for=burger] {
+  display: block;
+  width: 30px;
+  text-align: center;
+  right: 0px;
+  font-size: 61px;
+  padding: 5px 25px;
+  background-color: #00A6FC;
+  user-select: none;
+  margin-left: 3vw;
+}
+
+[for=burger]::before {
+  content: '≡';
+  color: #e7e7e7;
+}
+
+#burger:checked + [for=burger]::before {
+  content: '⨯';
+  color: #e7e7e7;
+}
+
+.nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  margin-top: 68px;
+  background: #00A6FC;
+  float: right;
+  user-select: none;
+}
+
+.nav ul li a{
+  padding: 0;
+}
+
+.nav li {
+  display: block;
+}
+
+.nav ul hr {
+  display: block;
+}
+
+#burger:checked + label + .nav {
+  display: block;
+  animation: show .5s ease;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* ================     Post     ================  */
+.main_title {
+  margin: 50px auto 30px;
+  width: 65%;
+}
+
+
+.post {
+  display: flex;
+  margin: 30px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding-left: 25px;
+  justify-content: space-between;
+  background-color: #ffffff;
+  width: 65%;
+  height: 160px;
+}
+
+.post__image {
+  width: 240px;
+  padding-left: 10px;
+}
+
+.post__title {
+  color: black;
+  margin-bottom: 0;
+}
+
+.post__title:hover {
+  color: #656565;
+}
+
+.post__info {
+  padding-top: 0.5em;
+  color: #888888;
+  padding-bottom: 0.5em;
+}
+
+.post__info a {
+  color: #00A6FC;
+}
+
+.post__info a:hover {
+  color: #0582ca;
+}
+
+@media (max-width: 1200px) {
+  .post {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .post {
+    flex-direction: column;
+    width: 80%;
+    padding: 20px;
+    height: auto;
+  }
+
+  .post__image {
+    align-self: center;
+    min-width: 70%;
+    padding-left: 0;
+  }
+
+  .post__title {
+    margin: 0;
+    padding-bottom: 15px;
+  }
+
+  .post__full_info {
+    padding-left: 5%;
+    display: table;
+  }
+
+  .post__info { 
+    display: table-header-group;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .post__title {
+    font-size: 14pt;
+  }
+  
+  .post__info {
+    font-size: 12px;
+  }
+}
+/*==============================     Content     ==============================*/
+.content {
+  display: flex;
+  box-sizing:border-box;
+  width: 65%;
+  padding: 2em 3em;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+}
+
+.content__info {
+  color: #888888;
+}
+
+.content__info a {
+  color: #00A6FC;
+}
+
+.content__info a:hover {
+  color: #0582ca;
+}
+
+.content__image {
+  width: 300px;
+  padding-bottom: 20px;
+}
+
+.content__description {
+  margin-right: 140px;
+}
+
+.content__description a {
+  color: #00A6FC;
+}
+
+.content__description a:hover {
+  color: #0582ca;
+}
+
+.content_left {
+  width: 50%;
+}
+
+.content_right {
+  width: 100%;
+}
+
+.content__right__title {
+  margin: 0 auto;
+}
+
+.content__post {
+  display: flex;
+  margin: 15px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding-left: 25px;
+  justify-content: space-between;
+  background-color: #ffffff;
+  height: 80px;
+}
+
+.content__post__image {
+  width: 120px;
+  padding-left: 10px;
+}
+
+.content__post__title {
+  color: black;
+  margin-bottom: 0;
+  font-size: 10pt;
+}
+
+.content__post__title:hover {
+  color: #656565;
+}
+
+.content__post__info {
+  padding-top: 0.5em;
+  color: #888888;
+  font-size: 8pt;
+  padding-bottom: 0.5em;
+}
+
+.content__post__info a {
+  color: #00A6FC;
+}
+
+.content__post__info a:hover {
+  color: #0582ca;
+}
+
+
+/*==============================     Footer     ==============================*/
+
+.footer-distributed {
+  background-color: #051923;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 65%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+  margin: 0 auto;
+}
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
